@@ -14,7 +14,7 @@
 
 * Убедиться, что установлен gulp последней версии. Если он не установлен, тогда устанавливаем:
 
-npm install gulpjs/gulp-cli#4.0.0 -g
+> npm install gulpjs/gulp-cli#4.0 -g
 
 ## Инструкция для старта проекта
 
@@ -23,4 +23,18 @@ npm install gulpjs/gulp-cli#4.0.0 -g
 
 * Запустить команду npm install в терминале. Данная команда установит все пакеты, которые указаны в файле package.json, 
 а также все их зависимости
+
+## Домашнее задание
+1. Git
+- git status
+- git add
+- git commit -m "some comment"
+- git push
+- git branch
+- git checkout
+- git merge
+
+2. Gulp
+- Попрактиковаться с установкой gulp и его пакетов
+- autoprefixer и sourcemaps Разобраться что это и установить в проект
 
