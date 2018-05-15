@@ -16,13 +16,10 @@ gulp.task('server', function() {
             baseDir: "build"
         }
     });
-
-
     gulp.watch('build/**/*').on('change', browserSync.reload);
 });
 
 /*------------ Pug compile ------------*/
-
 gulp.task('templates:compile', function buildHTML() {
     return gulp.src('source/templates/index.pug')
         .pipe(pug({
@@ -31,13 +28,13 @@ gulp.task('templates:compile', function buildHTML() {
         .pipe(gulp.dest('build'));
 });
 
-/*------------ Style compile ------------*/
+/*------------ Styles compile ------------*/
 gulp.task('styles:compile', function () {
     return gulp.src('source/styles/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(rename("main.min.css"))
+        .pipe(rename('main.min.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -52,7 +49,6 @@ gulp.task('sprite', function(cb) {
         imgPath: '../images/sprite.png',
         cssName: 'sprite.scss'
     }));
-
     spriteData.img.pipe(gulp.dest('build/images/'));
     spriteData.css.pipe(gulp.dest('source/styles/global/'));
     cb();
