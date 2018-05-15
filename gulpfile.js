@@ -35,10 +35,7 @@ gulp.task('styles:compile', function () {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(rename('main.min.css'))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
+        .pipe(autoprefixer(['last 2 versions']))
         .pipe(gulp.dest('build/css'));
 });
 
