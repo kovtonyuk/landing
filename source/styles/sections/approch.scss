@@ -78,4 +78,15 @@
       color: #fff;
     }
   }
+
+  &__title {
+    margin-bottom: 6px;
+    font-size: 1.125rem;
+    font-family: $ff-main-bold;
+  }
+
+  &__description {
+    margin: 0;
+    line-height: 1.5;
+  }
 }
