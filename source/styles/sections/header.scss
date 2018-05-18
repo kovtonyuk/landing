@@ -10,6 +10,12 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 41px 0 32px;
+
+    .button {
+      @media (max-width: 1080px) {
+
+      }
+    }
   }
 }
 
