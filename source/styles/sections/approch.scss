@@ -11,10 +11,6 @@
     margin: 0;
     padding: 0;
     counter-reset: count;
-
-    @media (max-width: 985px) {
-      margin: 30px;
-    }
   }
 
   &__item {
