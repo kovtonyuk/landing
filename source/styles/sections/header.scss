@@ -25,6 +25,10 @@
 
 .contacts {
   text-align: right;
+
+  @media (max-width: 1030px) {
+    margin-right: 10px;
+  }
 }
 
 .contact {

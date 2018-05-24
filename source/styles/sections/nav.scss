@@ -17,6 +17,11 @@
     text-transform: capitalize;
     color: #424242;
     transition: 0.3s;
+
+    @media (max-width: 530px) {
+      display: block;
+      text-align: center;
+    }
     
     &:hover,
     &--active{
@@ -36,6 +41,15 @@
 
     &:last-child:after {
       display: none;
+    }
+
+    @media (max-width: 530px) {
+      display: block;
+      text-align: center;
+
+      &:after {
+        display: none;
+      }
     }
   }
 }
