@@ -15,6 +15,10 @@
     @media (max-width: 985px) {
       margin: 0 30px;
     }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+      padding: 0 20px;
+    }
   }
 
   &__item {
@@ -35,10 +39,6 @@
 
       @media (max-width: 732px) {
         display: block;
-      }
-
-      &__title {
-        padding-right: 10px;
       }
 
       .approch__step {
@@ -109,7 +109,7 @@
       counter-increment: count;
       display: block;
       font-family: $ff-steps;
-      font-size: 3rem;
+      font-size: 3.5rem;
       line-height: 1;
       color: #fff;
     }
@@ -121,6 +121,7 @@
 
   &__title {
     margin-bottom: 6px;
+    padding-right: 37px;
     font-size: 1.125rem;
     font-family: $ff-main-bold;
   }
@@ -128,5 +129,6 @@
   &__description {
     margin: 0;
     line-height: 1.5;
+    padding-right: 23px;
   }
 }

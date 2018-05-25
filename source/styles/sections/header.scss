@@ -11,14 +11,8 @@
     align-items: center;
     padding: 41px 0 32px;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1080px) {
       flex-direction: column;
-    }
-
-    .button {
-      @media (max-width: 1080px) {
-        margin-right: 15px;
-      }
     }
   }
 }
