@@ -27,7 +27,7 @@
     @media (max-width: 985px) {
       padding: 15px 15px;
     }
-    
+
     &:nth-child(2n) {
       display: flex;
       flex-direction: row-reverse;
@@ -37,9 +37,13 @@
         display: block;
       }
 
+      &__title {
+        padding-right: 10px;
+      }
+
       .approch__step {
         right: auto;
-        left: -52px;
+        left: -55px;
       }
     }
   }
@@ -88,7 +92,8 @@
   &__step {
     @include centerer-y();
 
-    right: -58px;
+    right: -52px;
+    top: 48%;
     width: 103px;
     height: 103px;
     padding-top: 10px;

@@ -1,8 +1,8 @@
 .nav {
   display: inline-block;
-  vert-align: top;
-  padding-top: 7px;
+  vertical-align: top;
   margin-right: 15px;
+  margin-left: 175px;
 
   @media (max-width: 1000px) {
     margin-bottom: 25px;
@@ -10,9 +10,10 @@
 
   &__link {
     display: inline-block;
-    vert-align: top;
+    vertical-align: top;
     padding: 10px;
     font-family: $ff-main-bold;
+    font-size: 0.9rem;
     text-decoration: none;
     text-transform: capitalize;
     color: #424242;
