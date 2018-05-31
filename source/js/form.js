@@ -27,7 +27,12 @@
         if (key == 27) {
             onClose();
         }
-    })
+    });
+
+    document.getElementsByClassName('arrow-down').onclick = function() {
+        document.querySelector('.form-container').fadeIn(500);
+        document.querySelector('.form-container').fadeOut(500);
+    };
 
     window.form = me;
 }());
