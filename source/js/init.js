@@ -1,1 +1,1 @@
-window.SK = {};
+window.TEST = {};

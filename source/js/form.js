@@ -46,10 +46,10 @@
         if (!me.isAllCompleted(document.querySelectorAll('[data-valid="required"]'))) {
             console.log('Заполните обязательные поля');
             return false;
-        } else if (!SK.validation.isEmail(document.querySelector('[data-email]'))) {
+        } else if (!TEST.validation.isEmail(document.querySelector('[data-email]'))) {
             console.log('Не верно указан email');
             return false;
-        } else if (!SK.validation.isNumber(document.querySelector('[data-email]'))) {
+        } else if (!TEST.validation.isNumber(document.querySelector('[data-email]'))) {
             console.log('Не верно указан номер телефона');
             return false;
         }
@@ -61,7 +61,7 @@
         var result = true;
 
         for(var i=0; i < data.length; i++) {
-            if (!SK.validation.isNotEmpty(data[i].value)) {
+            if (!TEST.validation.isNotEmpty(data[i].value)) {
                 result = false;
                 break;
             }
@@ -69,5 +69,5 @@
         return result;
     };
 
-    SK.form = me;
+    TEST.form = me;
 }());
