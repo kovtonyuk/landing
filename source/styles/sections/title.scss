@@ -1,0 +1,37 @@
+.title {
+  margin-bottom: 65px;
+  text-align: center;
+
+  @media (max-width: 515px) {
+    margin-bottom: 35px;
+  }
+
+  .title__header {
+    margin: 0;
+    font-size: 2.25rem;
+    font-family: $ff-main-bold;
+    line-height: 1;
+  }
+
+  &__text {
+    font-size: 1.25rem;
+    font-family: $ff-main-light;
+
+    @media (max-width: 515px) {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  &--with-bottom-line {
+    position: relative;
+
+    &:after {
+      @include centerer-x();
+      content: '';
+      bottom: -16px;
+      width: 47px;
+      height: 5px;
+      background: #424242;
+    }
+  }
+}
