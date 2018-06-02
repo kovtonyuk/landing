@@ -14,9 +14,9 @@ section.form__section
                     ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
 
                 .form__fields
-                    input.form__input(type='text' placeholder="Your Name" autocomplete='text')
-                    input.form__input(type="text" placeholder="Contact Number" autocomplete='tel')
-                    input.form__input(type="text" placeholder="Company Name" autocomplete='text')
+                    input.form__input(type='text' placeholder="Your Name" autocomplete='text' data-valid='required')
+                    input.form__input(type="email" placeholder="Your email" autocomplete='email' data-valid='required' data-email)
+                    input.form__input(type="text" placeholder="Contact Number" autocomplete='tel' data-valid='required' data-number)
 
                 button(type="submit").button.button--red.button--text-uppercase Submit now
 

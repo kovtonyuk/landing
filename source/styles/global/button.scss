@@ -11,6 +11,10 @@
   background: #de2b24;
   transition: 0.3s;
 
+  @media (max-width: 1080px) {
+    margin: 0;
+  }
+
   &:hover {
     background: lighten(#de2b24, 7%);
   }

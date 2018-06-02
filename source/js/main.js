@@ -6,18 +6,7 @@
     if(openFormButton) {
         openFormButton.addEventListener('click', function(e) {
             e.preventDefault();
-            TEST.form.open();
-        })
-    }
-
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (TEST.form.isValid()) {
-                console.log('All good');
-            } else {
-                console.log('Is not valid');
-            }
+            form.open();
         })
     }
 }());

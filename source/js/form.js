@@ -42,32 +42,5 @@
         }
     });
 
-    me.isValid = function () {
-        if (!me.isAllCompleted(document.querySelectorAll('[data-valid="required"]'))) {
-            console.log('Заполните обязательные поля');
-            return false;
-        } else if (!TEST.validation.isEmail(document.querySelector('[data-email]'))) {
-            console.log('Не верно указан email');
-            return false;
-        } else if (!TEST.validation.isNumber(document.querySelector('[data-email]'))) {
-            console.log('Не верно указан номер телефона');
-            return false;
-        }
-
-        return true;
-    };
-
-    me.isAllCompleted = function (data) {
-        var result = true;
-
-        for(var i=0; i < data.length; i++) {
-            if (!TEST.validation.isNotEmpty(data[i].value)) {
-                result = false;
-                break;
-            }
-        }
-        return result;
-    };
-
-    TEST.form = me;
+    window.form = me;
 }());
